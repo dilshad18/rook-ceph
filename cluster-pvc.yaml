@@ -118,8 +118,8 @@ spec:
           #             - rook-ceph-osd-prepare
         resources:
         # These are the OSD daemon limits. For OSD prepare limits, see the separate section below for "prepareosd" resources
-        #   limits:
-        #     memory: "4Gi"
+          limits:
+            memory: "4Gi"
         #   requests:
         #     cpu: "500m"
         #     memory: "4Gi"
@@ -132,7 +132,7 @@ spec:
             spec:
               resources:
                 requests:
-                  storage: 10Gi
+                  storage: 100Gi
               # IMPORTANT: Change the storage class depending on your environment
               storageClassName: gp3
               volumeMode: Block
